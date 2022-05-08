@@ -124,6 +124,7 @@ def UserHome():
             date = request.form.get("date")
             car_name = request.form.get("car-name")
             car_model = request.form.get("car-model")
+            car_description = request.form.get("car-description")
             version_number = request.form.get("version-number")
 
             # Working with files 
@@ -141,7 +142,8 @@ def UserHome():
                     now = datetime.now()
                     dt_string = now.strftime("%d-%m-%Y-%H:%M:%S")
                     image_path= f"static/Uploads/{dt_string}.jpg"
-                    file.save(image_path)
+                    file.save(image_path) 
+                    image_path= f"/static/Uploads/{dt_string}.jpg"
 
                     # # Saving into the database 
                     # image_data = convertToBinaryData(destination_path)
@@ -152,12 +154,12 @@ def UserHome():
                     # 
                     sql_statement = """
                         INSERT INTO cars (
-                            USERNAME, EMAIL_ADDRESS, DATE, CAR_NAME, MODEL, VERSION_NUMBER, IMAGE_PATH
-                            ) VALUES (?, ?, ?, ?, ?, ?, ?) 
+                            USERNAME, EMAIL_ADDRESS, DATE, CAR_NAME, MODEL, VERSION_NUMBER, CAR_DESCRIPTION, IMAGE_PATH
+                            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?) 
                     """; 
 
                     # insert the data 
-                    data_tuple = (username, email, date, car_name, car_model, version_number, image_path)
+                    data_tuple = (username, email, date, car_name, car_model, version_number, car_description, image_path)
 
                     # saving the data 
                     cursor.execute(sql_statement, data_tuple)

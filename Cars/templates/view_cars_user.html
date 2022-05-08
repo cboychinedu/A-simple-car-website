@@ -23,7 +23,7 @@
 
         </nav>
         <nav class="right-nav">
-            <a class="signin" href="/signin"> SIGNIN </a>
+            <a class="signin" href="/signin"> PROFILE </a>
             <a class="signout" href="/signout"> SIGNOUT </a>
             <input type="text" class="search-value" id="search-value" placeholder="Search"> 
             <input type="button" value="Search Car" class="search-car" id="search-car">
@@ -32,13 +32,67 @@
 
     <!-- Adding the main div -->
     <section>
-        <!-- Adding the display car image div -->
-        <div class="display-cars">
+        <div class="first-div">
+            <div class="display-cars" id="display-cars">
+                <div class="image-div">
+                    <img class="image-data" src="/static/Uploads/08-05-2022-15:58:59.jpg" alt="" srcset="">
+                </div>
+                <div class="car-prop-div">
+                    <h3 class="model"> Model V8-546 </h3>
+                    <h3 class="version"> Version 899dkdk </h3>
+                    <p class="car-description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis illum minima ullam exercitationem dolorum numquam impedit similique, ipsam necessitatibus ex sunt maiores 
+                        voluptas? Nesciunt ullam suscipit excepturi maxime ipsa eius.
+                    </p>
+                    <div class="button-div">
+                        <button class="view-car"> View Car </button>
+                        <button class="delete-car" id="delete-car"> Delete </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="display-cars" id="display-cars">
+                <div class="image-div">
+                    <img class="image-data" src="/static/Uploads/08-05-2022-15:58:59.jpg" alt="" srcset="">
+                </div>
+                <div class="car-prop-div">
+                    <h3 class="model"> Model V8-546 </h3>
+                    <h3 class="version"> Version 899dkdk </h3>
+                    <p class="car-description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis illum minima ullam exercitationem dolorum numquam impedit similique, ipsam necessitatibus ex sunt maiores 
+                        voluptas? Nesciunt ullam suscipit excepturi maxime ipsa eius.
+                    </p>
+                    <div>
+                        <button class="view-car"> View Car </button>
+                        <button class="delete-car" id="delete-car"> Delete </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="display-cars" id="display-cars">
+                <div class="image-div">
+                    <img class="image-data" src="/static/Uploads/08-05-2022-15:58:59.jpg" alt="" srcset="">
+                </div>
+                <div class="car-prop-div">
+                    <h3 class="model"> Model V8-546 </h3>
+                    <h3 class="version"> Version 899dkdk </h3>
+                    <p class="car-description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis illum minima ullam exercitationem dolorum numquam impedit similique, ipsam necessitatibus ex sunt maiores 
+                        voluptas? Nesciunt ullam suscipit excepturi maxime ipsa eius.
+                    </p>
+                    <div>
+                        <button class="view-car"> View Car </button>
+                        <button class="delete-car" id="delete-car"> Delete </button>
+                    </div>
+                </div>
+            </div>
+
 
         </div>
+        <!-- Adding the display car image div -->
+        
     </section>
 
-    <h4> View Cars Route </h4>
     
 
      <!-- Adding footer -->
@@ -113,7 +167,6 @@
         </footer>
 
     </footer>
-
 
     <!-- Adding javascript -->
     <script src="{{ url_for('static', filename='Cars/javascript/view_cars.js')}}"></script>

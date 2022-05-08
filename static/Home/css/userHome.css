@@ -55,7 +55,7 @@ g-3, .gy-3 {
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 .date, .car-name, 
-.car-model, .version-number {
+.car-model, .version-number, .car-description {
     display: block;
     width: 100%;
     margin-bottom: 30px;
@@ -79,7 +79,11 @@ g-3, .gy-3 {
     flex: 0 0 auto; 
     width: 100%;
 }
-.one { 
+.car-description {
+    height: 327px;
+    padding-left: 12px;
+    width: 104%;
+    padding-bottom: 278px; 
 }
 .two {
     margin-left: 60px;
