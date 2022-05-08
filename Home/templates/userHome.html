@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='Home/images/company_logo.jpg') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Home/css/userHome.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Home/css/index.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello {{ username }}</title>
+</head>
+<body>
+    <nav class="main-nav" id="main-nav">
+        <nav class="left-nav">
+            <a class="home" href="/"> HOME </a>
+            <a class="about" href=""> ABOUT </a>
+            <a class="services" href=""> SERVICES </a>
+            <a class="accessories" href=""> ACCESSORIES </a>
+            <a class="cars" href="/api/cars"> CARS </a>
+
+        </nav>
+        <nav class="right-nav">
+            <a class="signin" href="/signin"> PROFILE </a>
+            <a class="signout" href="/signout"> SIGNOUT </a>
+            <input type="text" class="search-value" id="search-value" placeholder="Search"> 
+            <input type="button" value="Search Car" class="search-car" id="search-car">
+        </nav>
+    </nav>
+
+
+    <div class="main-div" id="main-div">
+        <p class="welcome-para"> Welcome <span class="username-para"> {{ username }} </span> </p>
+    </div>
+
+    <form class="insert-car" action="/user_home" method="POST" enctype="multipart/form-data">
+        <!-- Adding the flash message -->
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for msg in messages %}
+                    <p class="flash_message" id="flash_message"> {{ msg }} </p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <div class=mb-3>
+            <div class="one">
+                <label for="username" class="form-label"> Username </label>
+                <input type="text" class="username" name="username" id="username" placeholder="Username">
+            </div>
+            <div class="two">       
+                <label for="email" class="form-label"> Email </label>
+                <input type="email" class="email-value" name="email-value" id="email-value" placeholder="Email Address">
+            </div>
+        </div>
+        <div>
+            <label for="date" class="form-label"> Date </label>
+            <input type="date" class="date" name="date" id="date" placeholder="Date">
+        </div>
+        <div>
+            <label for="car_name" class="form-label"> Car Name </label>
+            <input type="text" class="car-name" name="car-name" id="car-name" placeholder="Car Name">
+        </div>
+        <div>
+            <label for="model" class="form-label"> Car Model </label>
+            <input type="text" class="car-model" name="car-model" id="car-model" placeholder="Car Model" /> 
+        </div>
+        <div>
+            <label for="version_number" class="form-label"> Version Number </label>
+            <input type="text" class="version-number" id="version-number" name="version-number" placeholder="Version Number" /> 
+        </div>
+        <div>
+            <label for="image" class="form-label"> Car Image </label> <br> 
+            <input type="file" class="custom-file-input" id="image" name="image_file" required> 
+        </div>
+
+            <button type="submit" class="upload-car" id="upload-car"> Upload Car </button>
+       
+      </form>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Adding footer -->
+        <footer class="footer">
+            <footer class="first-footer">
+                <ul>
+                    <li> <b> CONTACT </b> </li>
+                    <li> 
+                        Street 2017 Harron Drive <br> 
+                        City Baltimore <br> 
+                        State Full Maryland <br> 
+                        Zip Code 21201 <br> 
+                        Phone Number: 443-498-7166 <br> 
+                        Mobile Number: 443-934-9384. 
+                    </li>
+                </ul>
+            </footer>
+            <footer class="second-footer">
+                <ul>
+                    <li> 
+                        <b>  About Us  </b>
+                    </li>
+                    <li> <a href=""> About Us </a> </li>
+                    <li> <a href=""> Careers </a> </li>
+                    <li> <a href=""> Press Room </a> </li>
+                    <li> <a href=""> Terms of Use </a> </li>
+                    <li> <a href=""> Privacy </a> </li>
+                    <li> <a href=""> Patient Rights </a> </li>
+                    <li> <a href=""> International </a></li>
+                </ul>
+            </footer>
+            <footer class="third-footer">
+                <ul>
+                    <li> 
+                        <b> <a href=""> CUSTOMER CARE </a> </b>
+                    </li>
+                    <li> <a href=""> Contact Us </a> </li>
+                    <li> <a href=""> Endless FAQs </a> </li>
+                    <li> <a href=""> Customers FAQs </a> </li>
+                    <li> <a href=""> Shipping </a> </li>
+                    <li> <a href=""> Our Blog </a> </li>
+                    <li> <a href=""> Pricing </a></li>
+                    <li> <a href=""> Car Frames </a></li>
+                    
+                </ul>
+    
+            </footer>
+            <footer class="fourth-footer">
+                <ul>
+                    <li> 
+                        <b> <a href=""> Top Collections </a> </b>
+                    </li>
+                    <li> <a href=""> Round </a> </li>
+                    <li> <a href=""> Square </a> </li>
+                    <li> <a href=""> Cat Eye </a> </li>
+                    <li> <a href=""> Aviator </a> </li>
+                    <li> <a href=""> Wayferer </a> </li>
+                    <li> <a href=""> Oversized </a></li>
+                    <li> <a href=""> Mirrored Sunglasses </a></li>
+                    <li> <a href=""> Sample Sale </a></li>
+                    
+                </ul>
+    
+            </footer>
+            <footer class="fifth-footer">
+                <ul>
+                    <li> <b> NEWSLETTER </b></li>
+                    <li> 
+                        <input type="email" placeholder="Your email address" class="email"> 
+                    </li>
+                </ul>
+            </footer>
+    
+        </footer>
+    
+
+      <!-- Adding javascript-->
+    <script src="{{ url_for('static', filename='Home/javascript/index.js') }}"></script>
+</body>
+</html>

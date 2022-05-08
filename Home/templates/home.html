@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='Home/images/company_logo.jpg') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Home/css/index.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <title> Welcome </title>
+</head>
+<body>
+    <nav class="main-nav" id="main-nav">
+        <nav class="left-nav">
+            <a class="home" href="/"> HOME </a>
+            <a class="about" href=""> ABOUT </a>
+            <a class="services" href=""> SERVICES </a>
+            <a class="accessories" href=""> ACCESSORIES </a>
+            <a class="cars" href="/api/cars"> CARS </a>
+
+        </nav>
+        <nav class="right-nav">
+            <a class="signin" href="/signin"> PROFILE </a>
+            <a class="signout" href="/signout"> SIGNOUT </a>
+            <input type="text" class="search-value" id="search-value" placeholder="Search"> 
+            <input type="button" value="Search Car" class="search-car" id="search-car">
+        </nav>
+    </nav>
+
+    
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <!-- Adidng the result div -->
+        <div class="result-div" id="result-div">
+
+        </div>
+    </div>
+
+    </div>
+
+    <!-- Adding the first div -->
+    <div class="f-div">
+        <div class="para-div">
+            <h2 class="overview"> OVERVIEW </h2>
+            <p class="overview-para"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo porro, aliquid illum voluptatum blanditiis qui, sapiente expedita ab pariatur perferendis 
+                a nesciunt modi, dignissimos minima reprehenderit veritatis ut quas? Vero.</p> <br> 
+
+            <p class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, autem voluptatibus quibusdam temporibus itaque incidunt nihil a facere blanditiis tenetur, 
+                vero natus quis assumenda sequi? Recusandae ut vitae distinctio eligendi.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam aspernatur magni velit fugit molestias numquam, et temporibus atque! Tempora quas sit totam 
+                cupiditate et doloremque voluptas odio porro non! Blanditiis!
+            </p>
+
+            <input type="button" value="JOIN OUT TEAM" class="join-our-team"> 
+            <input type="button" value="VIEW OUT HISTORY" class="view-our-history">
+
+        </div>
+
+        <div class="image-div">
+            <img class="cars-image" src="{{ url_for('static', filename='Home/images/img1.jpg') }}" alt="" srcset=""> 
+
+        </div>
+
+    </div>
+
+    <!-- Adding the second div -->
+    <div class="s-div">
+        <div class="s-s-div"> 
+  
+            <div class="image2-div">
+                <div>
+                    <img class="cars2-size" src="{{ url_for('static', filename='Home/images/img1.jpg') }}" alt="" srcset="">
+                </div>
+
+                <div>
+                    <img class="cars2-size" src="{{ url_for('static', filename='Home/images/img2.jpg') }}" alt="">
+                </div>
+
+            </div>
+
+            <div class="para2-div">
+                <div class="para2-para-div-1">
+                    <h1> DECEMBER 2021</h1>
+                    <p class="overview-para"> 
+                        We Established PowerOne to Provide Reliable Electric <br> 
+                        Vehicles Throughout the USA. 
+                    </p> <br> 
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis error recusandae, natus in placeat accusantium magni doloremque, quod vitae dolorem inventore velit exercitationem, 
+                        qui incidunt voluptatum. Porro nemo consequuntur aliquam?
+
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit reprehenderit tenetur quidem illum molestias architecto velit esse voluptas, est obcaecati nobis modi sint ullam 
+                        unde! Fugit consequuntur aperiam corporis ea.
+                    </p>
+                </div>
+
+                <div class="para2-para-div-2">
+                    <h1> MARCH 2013 </h1>
+                    <p class="overview-para"> 
+                        We Opened New Offices in Florida and Georga To Provide <br> 
+                        High-Quality EV's in More States. 
+                    </p> <br> 
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis error recusandae, natus in placeat accusantium magni doloremque, quod vitae dolorem inventore velit exercitationem, 
+                        qui incidunt voluptatum. Porro nemo consequuntur aliquam?
+
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit reprehenderit tenetur quidem illum molestias architecto velit esse voluptas, est obcaecati nobis modi sint ullam 
+                        unde! Fugit consequuntur aperiam corporis ea.
+                    </p>
+                </div>
+
+        
+            </div>    
+        </div>
+
+    </div>
+
+    <!-- Adding the third division -->
+    <div class="t-div">
+        <div class="img3-div">
+            <img src="{{ url_for('static', filename='Home/images/img3.jpg') }}" alt="" class="img-3">
+        </div>
+
+        <div class="para3-div">
+            <div>
+                <h3 class="car-sale"> <span class="car-sale-price"> $ 189, 965 </span> PORCHE C65-AMG </h3> <br> 
+
+            </div>
+            <div>
+                <p class="para-text-3">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. At nisi maxime veritatis dolores, totam neque error reprehenderit, accusantium eos nobis ea non voluptates blanditiis repellendus 
+                    praesentium? Enim deserunt eveniet officiis!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus iste aliquam earum tempore dicta numquam at. Soluta blanditiis velit minima porro quasi quae iure consectetur facilis fuga!
+                    Sed, doloremque excepturi?
+                </p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- Adding footer -->
+    <footer class="footer">
+        <footer class="first-footer">
+            <ul>
+                <li> <b> CONTACT </b> </li>
+                <li> 
+                    Street 2017 Harron Drive <br> 
+                    City Baltimore <br> 
+                    State Full Maryland <br> 
+                    Zip Code 21201 <br> 
+                    Phone Number: 443-498-7166 <br> 
+                    Mobile Number: 443-934-9384. 
+                </li>
+            </ul>
+        </footer>
+        <footer class="second-footer">
+            <ul>
+                <li> 
+                    <b>  About Us  </b>
+                </li>
+                <li> <a href=""> About Us </a> </li>
+                <li> <a href=""> Careers </a> </li>
+                <li> <a href=""> Press Room </a> </li>
+                <li> <a href=""> Terms of Use </a> </li>
+                <li> <a href=""> Privacy </a> </li>
+                <li> <a href=""> Patient Rights </a> </li>
+                <li> <a href=""> International </a></li>
+            </ul>
+        </footer>
+        <footer class="third-footer">
+            <ul>
+                <li> 
+                    <b> <a href=""> CUSTOMER CARE </a> </b>
+                </li>
+                <li> <a href=""> Contact Us </a> </li>
+                <li> <a href=""> Endless FAQs </a> </li>
+                <li> <a href=""> Customers FAQs </a> </li>
+                <li> <a href=""> Shipping </a> </li>
+                <li> <a href=""> Our Blog </a> </li>
+                <li> <a href=""> Pricing </a></li>
+                <li> <a href=""> Car Frames </a></li>
+                
+            </ul>
+
+        </footer>
+        <footer class="fourth-footer">
+            <ul>
+                <li> 
+                    <b> <a href=""> Top Collections </a> </b>
+                </li>
+                <li> <a href=""> Round </a> </li>
+                <li> <a href=""> Square </a> </li>
+                <li> <a href=""> Cat Eye </a> </li>
+                <li> <a href=""> Aviator </a> </li>
+                <li> <a href=""> Wayferer </a> </li>
+                <li> <a href=""> Oversized </a></li>
+                <li> <a href=""> Mirrored Sunglasses </a></li>
+                <li> <a href=""> Sample Sale </a></li>
+                
+            </ul>
+
+        </footer>
+        <footer class="fifth-footer">
+            <ul>
+                <li> <b> NEWSLETTER </b></li>
+                <li> 
+                    <input type="email" placeholder="Your email address" class="email"> 
+                </li>
+            </ul>
+        </footer>
+
+    </footer>
+    
+
+
+    <!-- Adding javascript-->
+    <script src="{{ url_for('static', filename='Home/javascript/index.js') }}"></script>
+</body>
+</html>

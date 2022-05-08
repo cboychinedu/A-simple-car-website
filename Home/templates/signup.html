@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Home/css/index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Home/css/signup.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <title> SIGN UP </title>
+</head>
+<body>
+    <nav class="main-nav" id="main-nav">
+        <nav class="left-nav">
+            <a class="home" href="/"> HOME </a>
+            <a class="about" href=""> ABOUT </a>
+            <a class="services" href=""> SERVICES </a>
+            <a class="accessories" href=""> ACCESSORIES </a>
+            <a class="cars" href="/api/cars"> CARS </a>
+
+        </nav>
+        <nav class="right-nav">
+            <a href="/signup" class="signup"> SIGNUP </a>
+            <a class="signin" href="/signin"> SIGNIN </a>
+            <input type="text" class="search-value" id="search-value" placeholder="Search"> 
+            <input type="button" value="Search Car" class="search-car" id="search-car">
+        </nav>
+    </nav>
+
+    
+
+    
+
+    <!-- form tag -->
+    <form action="signup" method="post" class="signup-form">
+        <div class="mb-3">
+            <!-- Adding the flash message -->
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for msg in messages %}
+                        <p class="flash_message" id="flash_message"> {{ msg }} </p>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+
+            <label for="email" class="form-label"> Email </label>
+            <input type="email" class="email" id="email" name="email" required> 
+            <div id="email-help" class="form-text"></div>
+        </div>
+        <div class="mb-3">
+            <label for="username" class="form-label"> Username </label>
+            <input type="text" class="username" id="username" name="username" required> 
+            <div id="username-help" class="form-text"> </div>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label"> Password </label>
+            <input type="password" class="password" id="password" name="password" required>
+
+        </div>
+
+        <button type="submit" class="btn btn-primary"> SIGN UP </button>
+
+    </form>
+
+
+
+
+
+
+
+     <!-- Adding footer -->
+     <footer class="footer">
+        <footer class="first-footer">
+            <ul>
+                <li> <b> CONTACT </b> </li>
+                <li> 
+                    Street 2017 Harron Drive <br> 
+                    City Baltimore <br> 
+                    State Full Maryland <br> 
+                    Zip Code 21201 <br> 
+                    Phone Number: 443-498-7166 <br> 
+                    Mobile Number: 443-934-9384. 
+                </li>
+            </ul>
+        </footer>
+        <footer class="second-footer">
+            <ul>
+                <li> 
+                    <b>  About Us  </b>
+                </li>
+                <li> <a href=""> About Us </a> </li>
+                <li> <a href=""> Careers </a> </li>
+                <li> <a href=""> Press Room </a> </li>
+                <li> <a href=""> Terms of Use </a> </li>
+                <li> <a href=""> Privacy </a> </li>
+                <li> <a href=""> Patient Rights </a> </li>
+                <li> <a href=""> International </a></li>
+            </ul>
+        </footer>
+        <footer class="third-footer">
+            <ul>
+                <li> 
+                    <b> <a href=""> CUSTOMER CARE </a> </b>
+                </li>
+                <li> <a href=""> Contact Us </a> </li>
+                <li> <a href=""> Endless FAQs </a> </li>
+                <li> <a href=""> Customers FAQs </a> </li>
+                <li> <a href=""> Shipping </a> </li>
+                <li> <a href=""> Our Blog </a> </li>
+                <li> <a href=""> Pricing </a></li>
+                <li> <a href=""> Car Frames </a></li>
+                
+            </ul>
+
+        </footer>
+        <footer class="fourth-footer">
+            <ul>
+                <li> 
+                    <b> <a href=""> Top Collections </a> </b>
+                </li>
+                <li> <a href=""> Round </a> </li>
+                <li> <a href=""> Square </a> </li>
+                <li> <a href=""> Cat Eye </a> </li>
+                <li> <a href=""> Aviator </a> </li>
+                <li> <a href=""> Wayferer </a> </li>
+                <li> <a href=""> Oversized </a></li>
+                <li> <a href=""> Mirrored Sunglasses </a></li>
+                <li> <a href=""> Sample Sale </a></li>
+                
+            </ul>
+
+        </footer>
+        <footer class="fifth-footer">
+            <ul>
+                <li> <b> NEWSLETTER </b></li>
+                <li> 
+                    <input type="email" placeholder="Your email address" class="email"> 
+                </li>
+            </ul>
+        </footer>
+
+    </footer>
+
+    <!-- Adding javascript -->
+    <script src="{{ url_for('static', filename='Home/javascript/signup.js') }}"></script>
+</body>
+</html>
