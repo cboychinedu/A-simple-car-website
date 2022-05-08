@@ -20,7 +20,7 @@ sql_statement = """
         CAR_NAME CHAR(255), 
         MODEL CHAR(255), 
         VERSION_NUMBER CHAR(255), 
-        IMAGE BLOB NOT NULL
+        IMAGE_PATH CHAR(255)
     ); 
 """
 
@@ -40,9 +40,3 @@ conn.commit();
 
 # close the connection 
 conn.close(); 
-
-
-
-    width: 50%;
-    margin: auto;
-    margin-top: 140px;

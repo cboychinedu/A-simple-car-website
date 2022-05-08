@@ -7,6 +7,7 @@ import bcrypt
 from base64 import b64encode
 from flask import request 
 from flask import Blueprint 
+from datetime import datetime 
 from flask import session, flash
 from flask import render_template, redirect, url_for 
 
@@ -128,19 +129,22 @@ def UserHome():
             # Working with files 
             file = request.files['image_file']
 
-            # Getting the file exetensions 
-            file_extensions =  ["JPG","JPEG","PNG","GIF"]
-            uploaded_file_extension = file.filename.split(".")[1]
-
             # Using a try catch block for the image check 
             try:
+                # Getting the file exetensions 
+                file_extensions =  ["JPG","JPEG","PNG","GIF"]
+                uploaded_file_extension = file.filename.split(".")[-1]
+
+                # If the file uploaded was an image file
                 if (uploaded_file_extension.upper() in file_extensions):
-                    destination_path= f"static/Uploads/{car_model}.jpg"
-                    file.save(destination_path)
+                    # Getting the current date 
+                    now = datetime.now()
+                    dt_string = now.strftime("%d-%m-%Y-%H:%M:%S")
+                    image_path= f"static/Uploads/{dt_string}.jpg"
+                    file.save(image_path)
 
-                    # Saving into the database 
-                    image_data = convertToBinaryData(destination_path)
-
+                    # # Saving into the database 
+                    # image_data = convertToBinaryData(destination_path)
                     # Connecting into the database 
                     conn = sqlite3.connect(db_path)
                     cursor = conn.cursor()
@@ -148,12 +152,12 @@ def UserHome():
                     # 
                     sql_statement = """
                         INSERT INTO cars (
-                            USERNAME, EMAIL_ADDRESS, DATE, CAR_NAME, MODEL, VERSION_NUMBER, IMAGE
+                            USERNAME, EMAIL_ADDRESS, DATE, CAR_NAME, MODEL, VERSION_NUMBER, IMAGE_PATH
                             ) VALUES (?, ?, ?, ?, ?, ?, ?) 
                     """; 
 
                     # insert the data 
-                    data_tuple = (username, email, date, car_name, car_model, version_number, image_data)
+                    data_tuple = (username, email, date, car_name, car_model, version_number, image_path)
 
                     # saving the data 
                     cursor.execute(sql_statement, data_tuple)

@@ -1503,3 +1503,78 @@
 05/08/2022 03:53:07 AM  * Restarting with stat _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
 05/08/2022 03:53:08 AM  * Debugger is active! _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
 05/08/2022 03:53:08 AM  * Debugger PIN: 130-041-244 _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:22:05 AM  * Running on http://localhost:5001/ (Press CTRL+C to quit) _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:22:05 AM  * Restarting with stat _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:22:05 AM  * Debugger is active! _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:22:05 AM  * Debugger PIN: 130-041-244 _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:22:13 AM 127.0.0.1 - - [08/May/2022 04:22:13] "GET / HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:22:15 AM 127.0.0.1 - - [08/May/2022 04:22:15] "GET /signin HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:22:18 AM 127.0.0.1 - - [08/May/2022 04:22:18] "GET /signup HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:22:32 AM 127.0.0.1 - - [08/May/2022 04:22:32] "[32mPOST /signup HTTP/1.1[0m" 302 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:22:32 AM 127.0.0.1 - - [08/May/2022 04:22:32] "GET /signin HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:22:45 AM 127.0.0.1 - - [08/May/2022 04:22:45] "POST /signin HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:22:57 AM 127.0.0.1 - - [08/May/2022 04:22:57] "[32mPOST /signin HTTP/1.1[0m" 302 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:22:57 AM 127.0.0.1 - - [08/May/2022 04:22:57] "GET /user_home HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:24:34 AM 127.0.0.1 - - [08/May/2022 04:24:34] "GET /user_home HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:24:34 AM 127.0.0.1 - - [08/May/2022 04:24:34] "GET /static/Home/css/userHome.css?q=1651980272 HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:24:41 AM 127.0.0.1 - - [08/May/2022 04:24:41] "GET / HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:24:43 AM 127.0.0.1 - - [08/May/2022 04:24:43] "[32mGET /signin HTTP/1.1[0m" 302 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:24:43 AM 127.0.0.1 - - [08/May/2022 04:24:43] "GET /user_home HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:24:55 AM 127.0.0.1 - - [08/May/2022 04:24:55] "GET /user_home HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:24:55 AM 127.0.0.1 - - [08/May/2022 04:24:55] "GET /static/Home/css/userHome.css?q=1651980293 HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:25:05 AM 127.0.0.1 - - [08/May/2022 04:25:05] "GET /user_home HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:25:05 AM 127.0.0.1 - - [08/May/2022 04:25:05] "GET /static/Home/css/userHome.css?q=1651980303 HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:25:38 AM 127.0.0.1 - - [08/May/2022 04:25:38] "GET /user_home HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:25:38 AM 127.0.0.1 - - [08/May/2022 04:25:38] "GET /static/Home/css/userHome.css?q=1651980336 HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:26:48 AM 127.0.0.1 - - [08/May/2022 04:26:48] "POST /user_home HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:27:36 AM 127.0.0.1 - - [08/May/2022 04:27:36] "GET /user_home HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:27:45 AM 127.0.0.1 - - [08/May/2022 04:27:45] "POST /user_home HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:27:52 AM 127.0.0.1 - - [08/May/2022 04:27:52] "POST /user_home HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:29:20 AM  * Detected change in '/home/mbonu/Documents/MainProjects/Cars-Project/Home/routes.py', reloading _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:29:20 AM  * Restarting with stat _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:29:20 AM  * Debugger is active! _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:29:20 AM  * Debugger PIN: 130-041-244 _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:29:36 AM 127.0.0.1 - - [08/May/2022 04:29:36] "POST /user_home HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:29:55 AM 127.0.0.1 - - [08/May/2022 04:29:55] "POST /user_home HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:31:40 AM  * Detected change in '/home/mbonu/Documents/MainProjects/Cars-Project/Home/routes.py', reloading _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:31:40 AM  * Restarting with stat _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:31:40 AM  * Debugger is active! _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:31:40 AM  * Debugger PIN: 130-041-244 _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:31:47 AM 127.0.0.1 - - [08/May/2022 04:31:47] "POST /user_home HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:32:03 AM 127.0.0.1 - - [08/May/2022 04:32:03] "POST /user_home HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:32:39 AM  * Detected change in '/home/mbonu/Documents/MainProjects/Cars-Project/Home/routes.py', reloading _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:32:39 AM  * Restarting with stat _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:32:39 AM  * Debugger is active! _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:32:39 AM  * Debugger PIN: 130-041-244 _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:32:50 AM  * Running on http://localhost:5001/ (Press CTRL+C to quit) _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:32:50 AM  * Restarting with stat _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:32:50 AM  * Debugger is active! _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:32:50 AM  * Debugger PIN: 130-041-244 _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:33:06 AM 127.0.0.1 - - [08/May/2022 04:33:06] "POST /user_home HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:33:36 AM  * Detected change in '/home/mbonu/Documents/MainProjects/Cars-Project/Home/routes.py', reloading _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:33:36 AM  * Restarting with stat _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:33:36 AM  * Debugger is active! _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:33:36 AM  * Debugger PIN: 130-041-244 _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:33:42 AM  * Detected change in '/home/mbonu/Documents/MainProjects/Cars-Project/Home/routes.py', reloading _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:33:42 AM  * Restarting with stat _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:33:42 AM  * Debugger is active! _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:33:42 AM  * Debugger PIN: 130-041-244 _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:33:51 AM  * Detected change in '/home/mbonu/Documents/MainProjects/Cars-Project/Home/routes.py', reloading _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:33:51 AM  * Restarting with stat _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:33:52 AM  * Debugger is active! _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:33:52 AM  * Debugger PIN: 130-041-244 _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:33:57 AM  * Running on http://localhost:5001/ (Press CTRL+C to quit) _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:33:58 AM  * Restarting with stat _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:33:58 AM  * Debugger is active! _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:33:58 AM  * Debugger PIN: 130-041-244 _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:34:02 AM 127.0.0.1 - - [08/May/2022 04:34:02] "POST /user_home HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:35:34 AM 127.0.0.1 - - [08/May/2022 04:35:34] "POST /user_home HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:35:35 AM 127.0.0.1 - - [08/May/2022 04:35:35] "GET /static/Home/css/userHome.css?q=1651980931 HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:35:42 AM 127.0.0.1 - - [08/May/2022 04:35:42] "POST /user_home HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:36:59 AM 127.0.0.1 - - [08/May/2022 04:36:59] "POST /user_home HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:37:02 AM 127.0.0.1 - - [08/May/2022 04:37:02] "[32mGET /signin HTTP/1.1[0m" 302 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:37:02 AM 127.0.0.1 - - [08/May/2022 04:37:02] "GET /user_home HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:37:44 AM 127.0.0.1 - - [08/May/2022 04:37:44] "POST /user_home HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:38:41 AM 127.0.0.1 - - [08/May/2022 04:38:41] "POST /user_home HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:38:41 AM 127.0.0.1 - - [08/May/2022 04:38:41] "GET /static/Home/javascript/userHome.js?q=1651981015 HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/08/2022 04:39:00 AM 127.0.0.1 - - [08/May/2022 04:39:00] "POST /user_home HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
