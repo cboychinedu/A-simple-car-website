@@ -71,13 +71,6 @@ def ViewCars():
             # Creating a route for viewing all the posted cars 
             return render_template("view_cars.html", result=result)
 
-    
-
-# Creating a route for posting cars 
-@cars.route("/post_cars", methods=["POST"])
-def PostCars():
-    # Creating a route for posting cars 
-    return "POST CARS"; 
 
 
 # Creating a route for deleting the cars 

@@ -24,7 +24,16 @@
     padding: 2px 0;
     background-color: #404040;
 }
-
+.no-car-data {
+    height: 40px;
+    background-color: #f9a2a2;
+    width: 45%;
+    padding-top: 13px;
+    padding-left: 27px;
+    color: #722121;
+    border-radius: 5px;
+    font-weight: bold;
+}
 .first-div::-webkit-scrollbar {
     width: 10px;
 }

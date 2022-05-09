@@ -3042,3 +3042,35 @@
 05/09/2022 03:11:13 AM 127.0.0.1 - - [09/May/2022 03:11:13] "GET /static/Uploads/09-05-2022-03:11:10.jpg HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
 05/09/2022 03:11:25 AM 127.0.0.1 - - [09/May/2022 03:11:25] "DELETE /api/delete-car HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
 05/09/2022 03:11:25 AM 127.0.0.1 - - [09/May/2022 03:11:25] "GET /api/cars HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/09/2022 03:13:46 AM  * Running on http://localhost:5001/ (Press CTRL+C to quit) _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/09/2022 03:13:46 AM  * Restarting with stat _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/09/2022 03:13:46 AM  * Debugger is active! _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/09/2022 03:13:46 AM  * Debugger PIN: 412-339-766 _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/09/2022 03:13:49 AM 127.0.0.1 - - [09/May/2022 03:13:49] "GET /api/cars HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/09/2022 03:13:52 AM 127.0.0.1 - - [09/May/2022 03:13:52] "[32mGET /signout HTTP/1.1[0m" 302 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/09/2022 03:13:52 AM 127.0.0.1 - - [09/May/2022 03:13:52] "GET / HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/09/2022 03:14:21 AM 127.0.0.1 - - [09/May/2022 03:14:21] "GET /signin HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/09/2022 03:14:21 AM 127.0.0.1 - - [09/May/2022 03:14:21] "[36mGET /static/Home/css/signin.css?q=1651961397 HTTP/1.1[0m" 304 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/09/2022 03:14:29 AM 127.0.0.1 - - [09/May/2022 03:14:29] "[32mPOST /signin HTTP/1.1[0m" 302 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/09/2022 03:14:29 AM 127.0.0.1 - - [09/May/2022 03:14:29] "GET /user_home HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/09/2022 03:15:06 AM 127.0.0.1 - - [09/May/2022 03:15:06] "POST /user_home HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/09/2022 03:15:09 AM 127.0.0.1 - - [09/May/2022 03:15:09] "GET /api/cars HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/09/2022 03:15:09 AM 127.0.0.1 - - [09/May/2022 03:15:09] "GET /static/Uploads/09-05-2022-03:15:05.jpg HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/09/2022 03:21:50 AM 127.0.0.1 - - [09/May/2022 03:21:50] "GET /api/cars HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/09/2022 03:21:54 AM 127.0.0.1 - - [09/May/2022 03:21:54] "DELETE /api/delete-car HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/09/2022 03:21:54 AM 127.0.0.1 - - [09/May/2022 03:21:54] "GET /api/cars HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/09/2022 03:23:45 AM 127.0.0.1 - - [09/May/2022 03:23:45] "GET /api/cars HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/09/2022 03:23:45 AM 127.0.0.1 - - [09/May/2022 03:23:45] "GET /static/Cars/css/view_cars_users.css?q=1652063022 HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/09/2022 03:26:00 AM 127.0.0.1 - - [09/May/2022 03:26:00] "GET /api/cars HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/09/2022 03:26:00 AM 127.0.0.1 - - [09/May/2022 03:26:00] "GET /static/Cars/css/view_cars_users.css?q=1652063157 HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/09/2022 03:29:40 AM 127.0.0.1 - - [09/May/2022 03:29:40] "GET /api/cars HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/09/2022 03:29:42 AM 127.0.0.1 - - [09/May/2022 03:29:42] "GET /api/cars HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/09/2022 03:29:51 AM 127.0.0.1 - - [09/May/2022 03:29:51] "GET / HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/09/2022 03:29:58 AM 127.0.0.1 - - [09/May/2022 03:29:58] "GET / HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/09/2022 03:29:59 AM 127.0.0.1 - - [09/May/2022 03:29:59] "GET /api/cars HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/09/2022 03:30:01 AM 127.0.0.1 - - [09/May/2022 03:30:01] "[32mGET /signin HTTP/1.1[0m" 302 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/09/2022 03:30:01 AM 127.0.0.1 - - [09/May/2022 03:30:01] "GET /user_home HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/09/2022 03:30:12 AM 127.0.0.1 - - [09/May/2022 03:30:12] "[32mGET /signout HTTP/1.1[0m" 302 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/09/2022 03:30:12 AM 127.0.0.1 - - [09/May/2022 03:30:12] "GET / HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/09/2022 03:30:14 AM 127.0.0.1 - - [09/May/2022 03:30:14] "GET /api/cars HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py
+05/09/2022 03:30:14 AM 127.0.0.1 - - [09/May/2022 03:30:14] "GET /static/Cars/css/view_cars.css?q=1652063185 HTTP/1.1" 200 - _internal.py _internal /home/mbonu/anaconda3/envs/ml/lib/python3.8/site-packages/werkzeug/_internal.py

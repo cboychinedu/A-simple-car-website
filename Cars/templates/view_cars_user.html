@@ -33,32 +33,35 @@
     <!-- Adding the main div -->
     <section>
         <section class="first-div" id="first-div">
-            {% for value in result %}
-                <div class="display-cars" id="display-cars">
-                    <div class="image-div">
-                        <img src="{{ value[8] }}"  class="image-data" alt=""> 
-                    </div>
-
-                    <div class="car-prop-div">
-                        <h3 class="model"> {{ value[4] }} </h3>
-                        <h3 class="version"> {{ value[3] }} {{ value[5] }} </h3>
-                        <h4> Price: {{ value[7] }}</h4>
-                        <h5> Date Uploaded: {{ value[2] }} </h5>
-                        <p class="car-description"> 
-                            {{ value[6] }}
-                        </p>
-
-                        <div class="button-div"> 
-                            <button class="view-car" id="{{ value[7] }}" onclick="viewCar('{{ value[8] }} ')"> View Car </button>
-                            <button class="delete-car" id="{{ value[7] }}" onclick="deleteCar('{{ value[8] }}')"> Delete Car </button> 
+            {% if result %}
+                {% for value in result %}
+                    <div class="display-cars" id="display-cars">
+                        <div class="image-div">
+                            <img src="{{ value[8] }}"  class="image-data" alt=""> 
                         </div>
+
+                        <div class="car-prop-div">
+                            <h3 class="model"> {{ value[4] }} </h3>
+                            <h3 class="version"> {{ value[3] }} {{ value[5] }} </h3>
+                            <h4> Price: {{ value[7] }}</h4>
+                            <h5> Date Uploaded: {{ value[2] }} </h5>
+                            <p class="car-description"> 
+                                {{ value[6] }}
+                            </p>
+
+                            <div class="button-div"> 
+                                <button class="view-car" id="{{ value[7] }}" onclick="viewCar('{{ value[8] }} ')"> View Car </button>
+                                <button class="delete-car" id="{{ value[7] }}" onclick="deleteCar('{{ value[8] }}')"> Delete Car </button> 
+                            </div>
+                        </div>
+
+
                     </div>
-
-
-                </div>
+                {% endfor %}
             
-                
-            {% endfor %}
+            {% else %}
+                <p class="no-car-data"> No Car data found! </p>
+            {% endif %}
         
 
 
