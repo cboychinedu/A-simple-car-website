@@ -68,7 +68,9 @@ def dated_url_for(endpoint, **values):
             values['q'] = int(os.stat(file_path).st_mtime)
     return url_for(endpoint, **values)
 
-ip_address = "192.168.196.200"
+ip_address = "192.168.196.200";
+port = 5001;
+print("Server is running on {}:{}".format(ip_address, port))
 # Running the flask application 
 if __name__ == "__main__":
     app.run(port=5001, 
