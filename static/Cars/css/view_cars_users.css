@@ -14,7 +14,7 @@
     border: 5px solid red; */
     overflow-y: scroll;
     margin: auto;
-    width: 75%;
+    width: 63%;
     height: 897px;
     margin-top: 135px;
     margin-bottom: 400px;
@@ -38,8 +38,8 @@
 .display-cars {
     margin: auto;
     margin-top: 53px;
-    height: 613px;
-    width: 85%;
+    height: 375px;
+    width: 93%;
     display: flex;
     border: 3px solid whitesmoke;
     border-radius: 9px;
@@ -47,8 +47,8 @@
 
 }
 .image-data {
-    width: 98%;
-    height: 565px;
+    width: 93%;
+    height: 332px;
     padding-left: 0px;
     padding-top: 0px;
     border-radius: 80px;
@@ -64,11 +64,11 @@
     width: 48%;
     /* margin: auto; */
     padding-left: 20px;
-    color: black;
+    color: black; 
     border: 2px solid white;
     margin-top: 0px;
-    padding-top: 47px;
-    padding-right: 4px;
+    padding-top: 20px;
+    padding-right: 20px;
 }
 .model {
     font-size: 49px; 
@@ -82,9 +82,10 @@
 
 }
 .image-div {
-    height: 583px;
-    width: 46%;
+    height: 362px;
+    width: 43%;
     padding-top: 18px;
+    /* border: 2px solid white; */
     padding-left: 14px;
     
 }
@@ -108,6 +109,7 @@
     color: white;
 }
 .first-div-cars {
+    border: 4px solid red;
     /* overflow-x: scroll; */
     height: 748px;
     overflow-y: hidden;
@@ -115,28 +117,4 @@
     margin: auto;
     margin-top: 104px;
     margin-bottom: 500px;
-}
-.backwards-div {
-    height: 50px;
-    margin-top: 20px; 
-    float: left; 
-}
-.forward-div {
-    height: 50px;
-    margin-top: 20px; 
-    float: right; 
-}
-.backwards {
-    height: 50px;
-    width: 99px;
-    margin-left: 50px;
-    color: white;
-    background-color: #424242;
-}
-.forward {
-    height: 50px;
-    width: 99px;
-    margin-right: 50px;
-    color: white;
-    background-color: #424242;
 }

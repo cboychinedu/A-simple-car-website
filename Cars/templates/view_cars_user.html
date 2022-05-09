@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='Home/images/company_logo.jpg') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='Home/css/index.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='Cars/css/view_cars.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Cars/css/view_cars_users.css')}}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="{{ url_for('static', filename='Cars/javascript/ajax.js')}}"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,63 +32,37 @@
 
     <!-- Adding the main div -->
     <section>
-        <div class="first-div">
-            <div class="display-cars" id="display-cars">
-                <div class="image-div">
-                    <img class="image-data" src="/static/Uploads/08-05-2022-15:58:59.jpg" alt="" srcset="">
-                </div>
-                <div class="car-prop-div">
-                    <h3 class="model"> Model V8-546 </h3>
-                    <h3 class="version"> Version 899dkdk </h3>
-                    <p class="car-description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis illum minima ullam exercitationem dolorum numquam impedit similique, ipsam necessitatibus ex sunt maiores 
-                        voluptas? Nesciunt ullam suscipit excepturi maxime ipsa eius.
-                    </p>
-                    <div class="button-div">
-                        <button class="view-car"> View Car </button>
-                        <button class="delete-car" id="delete-car"> Delete </button>
+        <section class="first-div" id="first-div">
+            {% for value in result %}
+                <div class="display-cars" id="display-cars">
+                    <div class="image-div">
+                        <img src="{{ value[8] }}"  class="image-data" alt=""> 
                     </div>
-                </div>
-            </div>
 
-            <div class="display-cars" id="display-cars">
-                <div class="image-div">
-                    <img class="image-data" src="/static/Uploads/08-05-2022-15:58:59.jpg" alt="" srcset="">
-                </div>
-                <div class="car-prop-div">
-                    <h3 class="model"> Model V8-546 </h3>
-                    <h3 class="version"> Version 899dkdk </h3>
-                    <p class="car-description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis illum minima ullam exercitationem dolorum numquam impedit similique, ipsam necessitatibus ex sunt maiores 
-                        voluptas? Nesciunt ullam suscipit excepturi maxime ipsa eius.
-                    </p>
-                    <div>
-                        <button class="view-car"> View Car </button>
-                        <button class="delete-car" id="delete-car"> Delete </button>
+                    <div class="car-prop-div">
+                        <h3 class="model"> {{ value[4] }} </h3>
+                        <h3 class="version"> {{ value[3] }} {{ value[5] }} </h3>
+                        <h4> Price: {{ value[7] }}</h4>
+                        <h5> Date Uploaded: {{ value[2] }} </h5>
+                        <p class="car-description"> 
+                            {{ value[6] }}
+                        </p>
+
+                        <div class="button-div"> 
+                            <button class="view-car" id="{{ value[7] }}" onclick="viewCar('{{ value[8] }} ')"> View Car </button>
+                            <button class="delete-car" id="{{ value[7] }}" onclick="deleteCar('{{ value[8] }}')"> Delete Car </button> 
+                        </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="display-cars" id="display-cars">
-                <div class="image-div">
-                    <img class="image-data" src="/static/Uploads/08-05-2022-15:58:59.jpg" alt="" srcset="">
-                </div>
-                <div class="car-prop-div">
-                    <h3 class="model"> Model V8-546 </h3>
-                    <h3 class="version"> Version 899dkdk </h3>
-                    <p class="car-description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis illum minima ullam exercitationem dolorum numquam impedit similique, ipsam necessitatibus ex sunt maiores 
-                        voluptas? Nesciunt ullam suscipit excepturi maxime ipsa eius.
-                    </p>
-                    <div>
-                        <button class="view-car"> View Car </button>
-                        <button class="delete-car" id="delete-car"> Delete </button>
-                    </div>
-                </div>
-            </div>
 
 
-        </div>
+                </div>
+            
+                
+            {% endfor %}
+        
+
+
+        </section>
         <!-- Adding the display car image div -->
         
     </section>
@@ -169,6 +143,6 @@
     </footer>
 
     <!-- Adding javascript -->
-    <script src="{{ url_for('static', filename='Cars/javascript/view_cars.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='Cars/javascript/view_cars_users.js')}}"></script>
 </body>
 </html>

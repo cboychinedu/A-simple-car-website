@@ -5,6 +5,7 @@
 }
 body {
     font-family: 'PT Sans', sans-serif;
+    overflow-x: hidden;
 
 }
 a {
@@ -219,10 +220,10 @@ a:hover {
 .t-div {
     height: 500px;
     background-color: black;
-    margin-bottom: 428px
+    margin-bottom: 549px
 }
 .img3-div {
-    height: 705px;
+    height: 822px;
 }
 .img-3 {
     width: 100%;

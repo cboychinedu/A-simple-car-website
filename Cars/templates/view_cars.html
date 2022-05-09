@@ -32,13 +32,44 @@
 
     <!-- Adding the main div -->
     <section>
-        <!-- Adding the display car image div -->
-        <div class="display-cars">
+        <div class="first-div-cars" id="first-div-cars">
 
+
+            {% for value in result %}
+                <div class="display-cars" id="display-cars">
+                    <div class="image-div">
+                        <img src="{{ value[8] }}"  class="image-data" alt=""> 
+                    </div>
+
+                    <div class="car-prop-div">
+                        <h3 class="model"> {{ value[4] }} </h3>
+                        <h3 class="version"> {{ value[3] }} {{ value[5] }} </h3>
+                        <h4> Price: {{ value[7] }}</h4>
+                        <h5> Date Uploaded: {{ value[2] }} </h5>
+                        <p class="car-description"> 
+                            {{ value[6] }}
+                        </p>
+
+                        <div class="button-div"> 
+                            <button class="view-car" id="{{ value[7] }}" onclick="viewCar('{{ value[8] }}');"> View Car </button>
+                        </div>
+                    </div>
+
+
+                </div>
+            {% endfor %}
+
+            
+            <div class="backwards-div"> 
+                <button class="backwards" onclick="plusDivs(-1)">&#10094;</button>
+            </div>
+            <div class="forward-div">
+                <button class="forward" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+            
+            
         </div>
     </section>
-
-    <h4> View Cars Route </h4>
     
 
      <!-- Adding footer -->

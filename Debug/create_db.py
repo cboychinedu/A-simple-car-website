@@ -21,6 +21,7 @@ sql_statement = """
         MODEL CHAR(255), 
         VERSION_NUMBER CHAR(255), 
         CAR_DESCRIPTION CHAR(355),
+        CAR_PRICE CHAR(255), 
         IMAGE_PATH CHAR(255)
     ); 
 """
