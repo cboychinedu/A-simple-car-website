@@ -29,6 +29,16 @@
         </nav>
     </nav>
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <!-- Adidng the result div -->
+            <div class="result-div" id="result-div"> </div>
+        </div>
+    </div>
+
     
 
     
@@ -145,5 +155,6 @@
 
     <!-- Adding javascript -->
     <script src="{{ url_for('static', filename='Home/javascript/signup.js') }}"></script>
+    <script src="{{ url_for('static', filename='Home/javascript/index.js') }}"></script>
 </body>
 </html>

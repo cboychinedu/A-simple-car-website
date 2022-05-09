@@ -19,7 +19,7 @@
             <a class="about" href=""> ABOUT </a>
             <a class="services" href=""> SERVICES </a>
             <a class="accessories" href=""> ACCESSORIES </a>
-            <a class="cars" href=""> CARS </a>
+            <a class="cars" href="/api/cars"> CARS </a>
 
         </nav>
         <nav class="right-nav">
@@ -30,6 +30,16 @@
             <input type="button" value="Search Car" class="search-car" id="search-car">
         </nav>
     </nav>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <!-- Adidng the result div -->
+            <div class="result-div" id="result-div"> </div>
+        </div>
+    </div>
 
 
     <form class="signin-form" action="signin" method="post">
@@ -135,5 +145,7 @@
 
     </footer>
     
+
+    <script src="{{ url_for('static', filename='Home/javascript/index.js') }}"></script>
 </body>
 </html>

@@ -107,3 +107,62 @@ def DeleteCars():
     else:
         # The user is not logged in 
         return {"message": "Cannot delete, when not logged in.", "status": "error" }
+
+
+# Creating a route for searching cars 
+@cars.route("/search", methods=["POST"])
+def SearchCar():
+    # Execute the bloc of code below for searching 
+    data = request.get_json(); 
+    search_value = data["search_value"]
+    data = []; 
+
+    # Connecting into the database, and look for the car version 
+    conn = sqlite3.connect(db_path); 
+
+    # Setting up the sql statement 
+    # sql_statement = """
+    #     SELECT * FROM cars WHERE CAR_NAME=?
+    # """
+    sql_statement = """
+        SELECT * FROM cars
+    """; 
+
+    # Execute the sql statement 
+    # cursor = conn.execute(sql_statement, (search_value, ))
+    cursor = conn.execute(sql_statement)
+    result = cursor.fetchall()
+
+    # Looping through all the result to find the searched value
+    for values in result:
+        # If the search value returns an empty value, execute the block 
+        # of code below 
+        if search_value == "":
+            # skip on, and move to the next item
+            continue
+
+        # If the search value is present, append the data into the data list.     
+        elif (search_value.lower() in values[3].lower()) or (search_value.lower() in values[4]) or (search_value.lower() in values[5]) or (search_value in values[7]):
+            data.append(values); 
+        
+        # If both conditions above were not satified, skip on, and move to the 
+        # next item
+        else:
+            # moving to the next item. 
+            continue; 
+
+     # Checking for the result
+    if data:
+        # Execute this block of code if the data was found on the 
+        # server. 
+        return {"data": data, "status": "success"}, 200
+
+    # Else 
+    else:
+        # Execute this block of code if the data was not found 
+        return {"message": "Data not found!", "status": "error"}
+
+
+    
+
+   

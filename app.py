@@ -3,6 +3,7 @@
 #!/usr/bin/env python3 
 
 # importing the necessary modules 
+from ipaddress import ip_address
 import os 
 import logging
 from flask import Flask, url_for, session  
@@ -67,9 +68,9 @@ def dated_url_for(endpoint, **values):
             values['q'] = int(os.stat(file_path).st_mtime)
     return url_for(endpoint, **values)
 
-
+ip_address = "192.168.196.200"
 # Running the flask application 
 if __name__ == "__main__":
     app.run(port=5001, 
-            host="localhost",
+            host=ip_address,
             debug=True)

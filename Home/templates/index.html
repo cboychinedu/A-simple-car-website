@@ -7,6 +7,7 @@
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='Home/images/company_logo.jpg') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='Home/css/index.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="{{ url_for('static', filename='Cars/javascript/ajax.js')}}"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <title> Welcome </title>
@@ -33,16 +34,12 @@
 
     <!-- The Modal -->
     <div id="myModal" class="modal">
-
-    <!-- Modal content -->
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <!-- Adidng the result div -->
-        <div class="result-div" id="result-div">
-
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <!-- Adidng the result div -->
+            <div class="result-div" id="result-div"> </div>
         </div>
-    </div>
-
     </div>
 
     <!-- Adding the first div -->
@@ -94,7 +91,7 @@
                         Vehicles Throughout the USA. 
                     </p> <br> 
 
-                    <p>
+                    <p class="para">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis error recusandae, natus in placeat accusantium magni doloremque, quod vitae dolorem inventore velit exercitationem, 
                         qui incidunt voluptatum. Porro nemo consequuntur aliquam?
 
@@ -110,7 +107,7 @@
                         High-Quality EV's in More States. 
                     </p> <br> 
 
-                    <p>
+                    <p class="para">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis error recusandae, natus in placeat accusantium magni doloremque, quod vitae dolorem inventore velit exercitationem, 
                         qui incidunt voluptatum. Porro nemo consequuntur aliquam?
 

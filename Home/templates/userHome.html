@@ -31,6 +31,16 @@
         </nav>
     </nav>
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <!-- Adidng the result div -->
+            <div class="result-div" id="result-div"> </div>
+        </div>
+    </div>
+
 
     <div class="main-div" id="main-div">
         <p class="welcome-para"> Welcome <span class="username-para"> {{ username }} </span> </p>
@@ -175,5 +185,6 @@
 
       <!-- Adding javascript-->
     <script src="{{ url_for('static', filename='Home/javascript/userHome.js') }}"></script>
+    <script src="{{ url_for('static', filename='Home/javascript/index.js') }}"></script>
 </body>
 </html>

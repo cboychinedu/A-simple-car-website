@@ -30,6 +30,16 @@
         </nav>
     </nav>
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <!-- Adidng the result div -->
+            <div class="result-div" id="result-div"> </div>
+        </div>
+    </div>
+
     <!-- Adding the main div -->
     <section>
         <div class="first-div-cars" id="first-div-cars">
@@ -66,7 +76,31 @@
                 </div>
             {% else %}
                 <p class="no-car-data"> No Car data found! </p>
+
+                <style>
+                    .first-div {
+                        height: 53px; 
+                        
+                    }
+                    .first-div::-webkit-scrollbar-track {
+                        border: 1px solid rgb(251, 251, 251);
+                        padding: 2px 0;
+                        background-color: #fbfbfb;
+                    }
+
+                    .first-div::-webkit-scrollbar {
+                        width: 10px;
+                    }
+
+                    .first-div::-webkit-scrollbar-thumb {
+                        border-radius: 10px;
+                        box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+                        background-color: #f8f8f8;
+                        border: 0px; 
+                    }
+                </style>
             {% endif %}
+
             
         </div>
     </section>
