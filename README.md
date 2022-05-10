@@ -60,7 +60,7 @@ $ pip install -r requirements.txt
 * To execute the program, open a command line interface terminal on <b> Linux </b> or cmd on <b> Windows </b>, and type the command below. 
 
 ```
-$ python main.py 
+$ python app.py 
 
 ```
 
@@ -70,7 +70,8 @@ $ python main.py
 Contact me for references 
 <ul>
     <li> <b> Email:</b> cmbonu@protonmail.com </li> 
-    <li> <b>Number:</b> +234-  </li>
+    <li> <b>Number:</b> +234-7081-528827 </li>
+    <li> <b> Number: </b> +234-9030-045587 </li> 
 </ul>
 </p>
 
