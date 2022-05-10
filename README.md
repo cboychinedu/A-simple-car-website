@@ -22,7 +22,7 @@
 <br> <br>
 
 <p>
- Click on the play image to view the working process of this project. 
+ Click on the play image below to view the video of how the working process of this application works. 
 </p>
 
 [![Watch the video](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.ZwABOB9q_j7DKvNnCeollwHaEr%26pid%3DApi&f=1)](https://youtu.be/NeE3K0V7Pys)
@@ -31,7 +31,7 @@
 ## Description 
 <p>
     This is a python web application script that allows users to upload properties and data of cars, and their respective prices.
-    It allows registered and non-registered users to view the prices, and type of automobile they want to buy. 
+    It allows registered and non-registered users to view the prices, and the type of automobile they want to buy. 
 
     This application uses some necessary dependencies, which is stated below. 
 
@@ -40,7 +40,7 @@
 ## Design 
 <ul>
 <li> Signup Page </li> <br>
-* This is the mobile page section for users to login and update or upload the type of car they want to sell or display. 
+* This is the mobile page section which allows users to login, update and upload the type and model of the car they want to sell or display. 
 </ul>
 <img src="Docs/design/register.jpg" height="600px" width="300px"> <br> <br> <br>
 
@@ -48,21 +48,29 @@
 
 <ul> 
 <li> Login Page </li> <br> 
-* This is the mobile page that displays to the user if he/she want to login into the website. 
+* This is the mobile page section that displays to the user if he/she want to login into the website. 
 </ul> 
 
 <img src="Docs/design/login.jpg" height="600px" width="300px"> <br> <br> <br>
 
 <ul>
 <li> Error Page </li> <br>
-* This moblie page section displays to the user if the password or email address type in was incorrect. 
+* This is the mobile page section which displays to the user that the password or email address typed in was incorrect. 
 
 </ul>
 
 <img src="Docs/design/error.jpg" height="600px" width="300px"> <br> <br> <br>
 
 
-* Home Page 
+<ul> 
+<li> Home Page </li> <br> 
+* This is the mobile section for displaying the home page, and a form for it's users to upload cars, their model, their description, and the price. 
+
+</ul>
+
+<img src="Docs/design/upload_car.jpg" height="600px" width="300px"> <br> <br> <br>
+
+
 
 ## Dependencies 
 
