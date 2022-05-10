@@ -19,7 +19,7 @@ app.config["TEMPLATES_AUTO_RELOAD"] = True
 app.secret_key = "kdsd8*DEKFE!@$#$$REDKDNI*(KEHE&E&^^$D"
 app.permanent_session_lifetime = timedelta(days=24)
 
-#
+#Sent with ProtonMail secure email.
 CORS(app)
 
 # Register the views using the "app.register" function 
@@ -67,7 +67,7 @@ def dated_url_for(endpoint, **values):
             values['q'] = int(os.stat(file_path).st_mtime)
     return url_for(endpoint, **values)
 
-ip_address = "192.168.196.200";
+ip_address = "192.168.58.200";
 port = 5001;
 print("Server is running on {}:{}".format(ip_address, port))
 # Running the flask application 
