@@ -1,6 +1,6 @@
 <h2> <b> Car Application </b> </h2> 
 
-<img src="Docs/company_logo.jpg" alt="company-image">
+<img src="Docs/company_logo.jpg" alt="company-image" height="700">
 
  
 <br><br>
