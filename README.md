@@ -37,6 +37,33 @@
 
 </p>
 
+## Design 
+<ul>
+<li> Signup Page </li> <br>
+* This is the mobile page section for users to login and update or upload the type of car they want to sell or display. 
+</ul>
+<img src="Docs/design/register.jpg" height="600px" width="300px"> <br> <br> <br>
+
+
+
+<ul> 
+<li> Login Page </li> <br> 
+* This is the mobile page that displays to the user if he/she want to login into the website. 
+</ul> 
+
+<img src="Docs/design/login.jpg" height="600px" width="300px"> <br> <br> <br>
+
+<ul>
+<li> Error Page </li> <br>
+* This moblie page section displays to the user if the password or email address type in was incorrect. 
+
+</ul>
+
+<img src="Docs/design/error.jpg" height="600px" width="300px"> <br> <br> <br>
+
+
+* Home Page 
+
 ## Dependencies 
 
 For this program to function effectively, the required dependencies are needed.
@@ -45,6 +72,17 @@ For this program to function effectively, the required dependencies are needed.
 * flask 
 * sqlite3 
 * flask_cors 
+
+## Pusing to Heroku 
+
+```
+$ heroku login
+$ heroku create 
+$ heroku rename <"app-new-name">
+$ git add .  
+$ git push heroku master 
+
+```
 
 ## Installing 
 
